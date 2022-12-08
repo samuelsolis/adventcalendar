@@ -1,8 +1,13 @@
+@font-face {
+  font-family: CuasiCrossfitFont;
+  src: url(../fonts/NotoSans-CondensedExtraBold.ttf);
+}
+
 .bg-kalender {
     background: linear-gradient(
-      rgba(64, 133, 185, 0.6), 
-      rgba(63, 104, 134, 0.9)
-    ), url("https://i.pinimg.com/736x/91/39/44/913944eec5340f74e39dcf1c97895137.jpg");
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.8)
+    ), url("../img/bk.jpg");
     min-height: 100vh;
     background-repeat: no-repeat;
     position: relative;
@@ -11,7 +16,7 @@
 
 .card,
 .font-festive {
-    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'CuasiCrossfitFont', Arial;
 }
 
 .uppercase {
@@ -23,10 +28,12 @@
 }
 
 .border-thick {
-    border-width: 3px;
+    border-width: 4px;
 }
 .card {
     border-color: #fff;
+    background: rgba(0,0,0,0.4);
+    font-size: 2rem;
 }
 .card:hover {
     border-color: #d4af37;

@@ -3,15 +3,8 @@ $('.card').click(function(){
     // set date header for card
     let id = $(this).attr("id")
     let content = cardContent[id-1]
-    if (id == 1 || id == 21) {
-        date = id + "st December"
-    } else if (id == 2 || id == 22){
-        date = id + "nd December"
-    } else if (id == 3 || id == 23){
-        date = id + "rd December"
-    } else {
-        date = id + "th December"
-    }
+    let day = (id * 1 ) + 7
+    date = day + " de Enero"
 
     $("#kalender-date").text(date)
 
@@ -25,8 +18,8 @@ $('.card').click(function(){
         $("#modal-text1").text(content[0])
     } else {
         $("#modal-text").removeClass("cheat-text").addClass("secret-code")
-        $("#modal-text2").show().text("Super Secret Code: " + content[1])
-        $("#modal-img").attr("src", content[2])
+        $("#modal-text2").show().text(content[1])
+        $("#img-container iframe").attr("src", content[2])
         $("#modal-text1").text(content[0])
     }
 
@@ -35,129 +28,129 @@ $('.card').click(function(){
 
 cardContent = [
     [
-        "For your advent calender this year, every day you get a secret code. Put them all together and on Christmas day you'll get a secret message",
-        "Ly48ce",
-        "assets/img/d1.jpg"
+        "¿Por qué deberíamos prestar tanta atención a lo que piensa la mayoría? (Sócrates)",
+        "15 Burpess",
+        'https://www.youtube.com/embed/auBLPXO8Fww'
     ],
     [
-        "Who delivers presents to baby sharks at Christmas? Santa Jaws!",
-        "Jfcuu",
-        "assets/img/d2.jpg"
+        "No esperes. Nunca va a ser el momento adecuado.",
+        "20 flexiones",
+        'https://www.youtube.com/embed/_l3ySVKYVJ8'
     ],
     [
-        "What do Santa’s little helpers learn at school? The elf-abet!",
-        "vxUMQ",
-        "assets/img/d3.jpg"
+        "Quien le tenga miedo a la muerte no hará cosas dignas de quien está vivo. (Séneca)",
+        "30 sentadillas",
+        "https://www.youtube.com/embed/rMvwVtlqjTE"
     ],
     [
         "What was Santa's best subject in school? Chemistree",
-        "XTY4j",
-        "assets/img/d4.jpg"
+        "100 saltos de comba",
+        "https://www.youtube.com/embed/hCuXYrTOMxI"
     ],
     [
         "Who hides in the bakery at Christmas? A mince spy!",
-        "kjCoK",
-        "assets/img/d5.jpg"
+        "40 jumping jacks",
+        "https://www.youtube.com/embed/PBHUfBzxczU"
     ],
     [
         "How did Mrs. Claus tell Santa the weather? 'It looks like rain, dear!'",
-        "eItUl",
-        "assets/img/d6.jpg"
+        "2min plancha",
+        "https://www.youtube.com/embed/sZxrs3C209k"
     ],
     [
         "What does Santa use to measure? Santameters!",
-        "1X7a8",
-        "assets/img/d7.jpg"
+        "20 saltos con rodillas al pecho",
+        "https://www.youtube.com/embed/NVXDRqTO_t8"
     ],
     [
         "What's a ghost's favorite Christmas story? The Fright Before Christmas!",
-        "BMO7B",
-        "assets/img/d8.jpg"
+        "20 flexiones de hombro",
+        "https://www.youtube.com/embed/oLPyqyExD8M"
     ],
     [
         "What do you get if you cross Santa with a duck? A Christmas Quacker!",
-        "7NzoJ",
-        "assets/img/d9.jpg"
+        "15 desplantes laterales (por pierna)",
+        "https://www.youtube.com/embed/anUr2UgfeDc"
     ],
     [
         "What do snowmen eat for breakfast? Ice Crispies.",
-        "i1Ou+",
-        "assets/img/d10.jpg"
+        "40 saltos de comba a una pierna (con cada pierna)",
+        "https://www.youtube.com/embed/hCuXYrTOMxI"
     ],
     [
         "Why is it always cold at Christmas? Because it is Decemberrrrrrr!",
-        "dzmNN",
-        "assets/img/d11.jpg"
+        "1 min de plancha lateral (por cada lado)",
+        "https://www.youtube.com/embed/lmTqYw3SAEg"
     ],
     [
         "What did one snowman say to the other snowman? Smells like carrots around here!",
-        "ohNzV",
-        "assets/img/d12.jpg"
+        "20 flexiones de tríceps en silla",
+        "https://www.youtube.com/embed/dl8_opV0A0Y"
     ],
     [
         "What does Santa use to bake cakes? Elf-raising flour",
-        "aAIal",
-        "assets/img/d13.jpg"
+        "15 zancadas (por pierna)",
+        "https://www.youtube.com/embed/L8fvypPrzzs"
     ],
     [
         "What do elves do after school? Their gnome work!",
-        "71NGj",
-        "assets/img/d14.jpg"
+        "20 sentadillas y media",
+        "https://www.youtube.com/embed/AyF084qFOFI"
     ],
     [
         "What did the snowman say to the robin? I have snow idea!",
-        "5cadu",
-        "assets/img/d15.jpg"
+        "20 flexiones no balanceadas",
+        "https://www.youtube.com/embed/Tf8yA0Dym7E"
     ],
     [
         "Why is it getting harder to buy Advent calendars? Because their days are numbered!",
-        "0Rtgk",
-        "assets/img/d16.jpg"
+        "50 saltos laterales",
+        "https://www.youtube.com/embed/2RSBoJhEZs0"
     ],
     [
         "How does Santa keep track of all the fireplaces he's visited? He keeps a logbook.",
-        "/mvxs",
-        "assets/img/d17.jpg"
+        "30 abdominales",
+        "https://www.youtube.com/embed/_HDZODOx7Zw"
     ],
      [
         "Who delivers presents to cats? Santa Paws!",
-        "KcKu5",
-        "assets/img/d18.jpg"
+        "20 sentadilla con salto",
+        "https://www.youtube.com/embed/4tt-EG2QV2E"
     ],
      [
         "Why does everyone love Frosty the Snowman? He's cool",
-        "+Sefv",
-        "assets/img/d19.jpg"
+        "20 burpees bastardos",
+        "https://www.youtube.com/embed/A8yn1osZQW4"
     ],
      [
         "What is white and minty? A polo bear!",
-        "kApsZ",
-        "assets/img/d20.jpg"
+        "20m paseo del oso",
+        "https://www.youtube.com/embed/HtArplPBMr8"
     ],
     [
         "What’s green, covered in tinsel and goes ribbet ribbet? A mistle-toad!",
-        "HTsvd",
-        "assets/img/d21.jpg"
+        "20 elevaciones laterales de pierna (por lado)",
+        "https://www.youtube.com/embed/l1pq3YA6t-8"
     ],
     [
         "How did Scrooge win the football game? The ghost of Christmas passed!",
-        "UujuL",
-        "assets/img/d22.jpg"
+        "20 flexiones en diamante",
+        "https://www.youtube.com/embed/XtU2VQVuLYs"
     ],
     [
         "What’s the absolute best Christmas present? A broken drum — you can’t beat it!",
-        "NG1lO",
-        "assets/img/d23.jpg"
+        "30 abdominales laterales",
+        "https://www.youtube.com/embed/EjWY7_EkqKU"
     ],
      [
         "What type of cars do elves drive? Toy-otas!",
-        "LsWC3",
-        "assets/img/d24.jpg"
+        "30 sentadilla con peso",
+        "https://www.youtube.com/embed/f-Vf2yRRqOg"
     ],
     [   
-        "The encryption is 128-bit AES and your secret password is rudoplh 🦌 Go decrypt your secret message!",
-        "mD8yR",
-        "assets/img/d25.jpg"
+        "La única manera de terminar algo, es empezándolo.",
+        "40 burpees",
+        "https://www.youtube.com/embed/auBLPXO8Fww"
     ]
 ]
 

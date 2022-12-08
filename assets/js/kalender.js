@@ -122,11 +122,6 @@ cardContent = [
         "20 burpees bastardos",
         "https://www.youtube.com/embed/A8yn1osZQW4"
     ],
-     [
-        "Sí, nos hemos jartado a salmones, pero no sabíamos andar como un oso.",
-        "20m paseo del oso",
-        "https://www.youtube.com/embed/HtArplPBMr8"
-    ],
     [
         "Como en las mejores sesiones de Aerobic de los 90",
         "20 elevaciones laterales de pierna (por lado)",
